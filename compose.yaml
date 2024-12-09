@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=todolist'
+      - 'MYSQL_PASSWORD=todolist'
+      - 'MYSQL_ROOT_PASSWORD=root'
+      - 'MYSQL_USER=todolist'
+    ports:
+      - '3307:3306'
